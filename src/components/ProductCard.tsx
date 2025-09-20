@@ -23,7 +23,7 @@ export const ProductCard = ({
   description,
 }: ProductCardProps) => {
   return (
-    <Card className="glass shadow-eco transition-eco hover:shadow-glow group cursor-pointer">
+    <Card className="glass shadow-eco transition-eco hover:shadow-glow hover-lift group cursor-pointer">
       <CardContent className="p-4">
         <div className="aspect-square relative mb-3 overflow-hidden rounded-lg">
           <img
@@ -31,7 +31,7 @@ export const ProductCard = ({
             alt={name}
             className="w-full h-full object-cover transition-eco group-hover:scale-105"
           />
-          <div className="absolute top-2 right-2 flex items-center gap-1 bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-medium">
+          <div className="absolute top-2 right-2 flex items-center gap-1 bg-primary text-primary-foreground px-2 py-1 rounded-full text-xs font-medium animate-fade-in">
             <Leaf className="w-3 h-3" />
             {ecoScore}/100
           </div>
